@@ -1,15 +1,12 @@
-import React, {useEffect, useState, useRef} from "react";
+import React from "react";
 import {render} from 'react-dom';
 
-const YatraCouponTabPanel = () => {
+const SimplePanel = () => {
     return (<h1>Hello React Guys</h1>)
 };
-
 window.addEventListener("load", function () {
     render(
-        <YatraCouponTabPanel/>,
-        document.getElementById("yatra-coupon-meta-element")
+        <h1>WOW Its Working</h1>,
+        document.getElementById("wordpress-react-ant-design")
     );
-
-
 });

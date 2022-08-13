@@ -153,7 +153,7 @@ final class WordPress_React
         $locale = apply_filters('plugin_locale', $locale, 'wordpress-react');
         unload_textdomain('wordpress-react');
 
-        load_textdomain('wordpress-react', WP_LANG_DIR . '/wordpress-react/yatra-' . $locale . '.mo');
+        load_textdomain('wordpress-react', WP_LANG_DIR . '/wordpress-react/wordpress-react-' . $locale . '.mo');
         load_plugin_textdomain('wordpress-react', false, plugin_basename(dirname(WORDPRESS_REACT_FILE)) . '/languages');
     }
 

@@ -15,10 +15,26 @@ Domain Path: /languages
 if (!defined('ABSPATH'))
     exit;
 
-define('WORDPRESS_REACT_FILE', __FILE__);
-define('WORDPRESS_REACT_VERSION', '1.0.0');
-define('WORDPRESS_REACT_URI', plugins_url('', WORDPRESS_REACT_FILE));
-define('WORDPRESS_REACT_DIR', plugin_dir_path(WORDPRESS_REACT_FILE));
+// Define WORDPRESS_REACT_PLUGIN_FILE.
+if (!defined('WORDPRESS_REACT_FILE')) {
+    define('WORDPRESS_REACT_FILE', __FILE__);
+}
+
+// Define WORDPRESS_REACT_VERSION.
+if (!defined('WORDPRESS_REACT_VERSION')) {
+    define('WORDPRESS_REACT_VERSION', '1.0.0');
+}
+
+// Define WORDPRESS_REACT_PLUGIN_URI.
+if (!defined('WORDPRESS_REACT_PLUGIN_URI')) {
+    define('WORDPRESS_REACT_PLUGIN_URI', plugins_url('', WORDPRESS_REACT_FILE));
+}
+
+// Define WORDPRESS_REACT_PLUGIN_DIR.
+if (!defined('WORDPRESS_REACT_PLUGIN_DIR')) {
+    define('WORDPRESS_REACT_PLUGIN_DIR', plugin_dir_path(WORDPRESS_REACT_FILE));
+}
+
 
 include_once plugin_dir_path(WORDPRESS_REACT_FILE) . 'includes/class-wordpress-react.php';
 
