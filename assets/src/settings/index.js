@@ -3,16 +3,18 @@ import {render} from 'react-dom';
 import Test from "./elements/test";
 import ReactDOM from 'react-dom';
 
-const SimplePanel = () => {
+const ContentArea = () => {
     return (
-        <Test/>
+        <div className="wordpress-react-setting-content-area">
+
+        </div>
     )
 };
 
 window.addEventListener("load", function () {
 
     render(
-        <SimplePanel/>,
+        <ContentArea/>,
         document.getElementById("wordpress-react-ant-design")
     );
 
