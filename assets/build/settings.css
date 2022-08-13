@@ -27436,5 +27436,21 @@ div.ant-typography-edit-content.ant-typography-rtl {
 
 
 /*# sourceMappingURL=antd.css.map*/
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/elements/index.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+[data-theme=dark] .site-layout .site-layout-background {
+  background: #141414;
+}
 
 /*# sourceMappingURL=settings.css.map*/
