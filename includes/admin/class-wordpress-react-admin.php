@@ -68,6 +68,13 @@ class WordPress_React_Admin
 
             wp_enqueue_script("wordpress-react-{$point}", WORDPRESS_REACT_PLUGIN_URI . "/assets/build/js/{$point}.js", $dependency['dependencies'], $dependency['version']);
 
+
+            if (file_exists(WORDPRESS_REACT_ABSPATH . "assets/build/{$point}.css")) {
+
+                wp_enqueue_style("wordpress-react-{$point}-css", WORDPRESS_REACT_PLUGIN_URI . "/assets/build/{$point}.css", array(), $dependency['version']);
+
+            }
+
         }
     }
 }

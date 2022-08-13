@@ -1,12 +1,20 @@
 import React from "react";
 import {render} from 'react-dom';
+import Test from "./elements/test";
+import ReactDOM from 'react-dom';
 
 const SimplePanel = () => {
-    return (<h1>Hello React Guys</h1>)
+    return (
+        <Test/>
+    )
 };
+
 window.addEventListener("load", function () {
+
     render(
-        <h1>WOW Its Working</h1>,
+        <SimplePanel/>,
         document.getElementById("wordpress-react-ant-design")
     );
+
+
 });
