@@ -21,7 +21,7 @@ class WordPress_React_Admin
 
         );
 
-        add_action('load-' . $settings_page, array($this, 'settings_page_init'));
+        //  add_action('load-' . $settings_page, array($this, 'settings_page_init'));
 
 
     }
@@ -30,6 +30,10 @@ class WordPress_React_Admin
     {
 
         echo '<h1>Output Page</h1>';
+
+
+        echo '<div id="wordpress-react-ant-design"></div>';
+
     }
 
     public function settings_page_init()
