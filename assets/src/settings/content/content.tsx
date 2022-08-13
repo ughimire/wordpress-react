@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {Col, Row} from 'antd';
 import 'antd/dist/antd.css';
+import "./index.scss"
+
 
 const Content = () => {
     return (
