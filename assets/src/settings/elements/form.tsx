@@ -14,7 +14,7 @@ const FormFields = () => {
 
     const [form] = Form.useForm();
     const [formLayout, setFormLayout] = useState<LayoutType>('vertical');
-    const [componentSize, setComponentSize] = useState<SizeType | 'default'>('default');
+    const [componentSize, setComponentSize] = useState<SizeType | 'large'>('large');
 
     const onFormLayoutChange = ({layout}: { layout: LayoutType }) => {
         setFormLayout(layout);
@@ -48,7 +48,7 @@ const FormFields = () => {
                 <Form.Item label="Field A">
                     <Input placeholder="input placeholder"/>
                 </Form.Item>
-                <Form.Item label="Field B">
+                <Form.Item label="Field B label, you can modify this label to chang ethe label of field B.">
                     <Input placeholder="input placeholder"/>
                 </Form.Item>
 
