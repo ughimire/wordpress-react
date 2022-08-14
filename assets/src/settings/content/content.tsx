@@ -1,15 +1,30 @@
 import * as React from 'react';
-import {Col, Row} from 'antd';
+import {useState} from 'react';
 import 'antd/dist/antd.css';
 import "./index.scss"
-
+import {Col, Row, Button} from 'antd';
+import {SaveOutlined} from '@ant-design/icons';
+import type {SizeType} from 'antd/es/config-provider/SizeContext';
 
 const Content = () => {
+    const [size, setSize] = useState<SizeType>('large');
+
     return (
         <div className="wordpress-react-settings-content">
-            <Row gutter={[0, 0]}>
-                <Col span={4}><h1>Hello Col1 </h1></Col>
-                <Col span={8}><h1>Hello Col 2</h1></Col>
+            <Row>
+                <Col flex={5}>
+                    <div className={"sidebar-left"}>
+                        <h2>Settings Page</h2>
+                    </div>
+                </Col>
+                <Col flex={20}>
+                    <div className={"header-center"}></div>
+                </Col>
+                <Col flex={5}>
+                    <div className={"header-right"}>
+
+                    </div>
+                </Col>
             </Row>
         </div>
     );

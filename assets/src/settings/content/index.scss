@@ -1,4 +1,10 @@
 .wordpress-react-settings-content {
-  padding: 15px;
-  background: #f8f9fc;
+   background: #f8f9fc;
+
+  .sidebar-left {
+    border-right: 2px solid #F1F3F4;
+    height: 100%;
+    padding: 15px;
+
+  }
 }
