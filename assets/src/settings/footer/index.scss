@@ -1,3 +1,21 @@
 .wordpress-react-settings-footer {
-  padding: 15px;
+
+  border: 2px solid #F1F3F4;
+
+  .footer-left {
+    padding: 15px;
+    height: 100%;
+  }
+
+  .footer-right {
+    padding: 15px;
+    height: 100%;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
 }

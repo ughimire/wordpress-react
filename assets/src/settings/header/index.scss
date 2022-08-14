@@ -1,9 +1,22 @@
 .wordpress-react-settings-header {
-  padding: 15px;
-  border: 2px solid #f9f9f9;
 
-  .header-title {
-    width: 100%;
-    border-right: 2px solid #f9f9f9;
+  border: 2px solid #F1F3F4;
+
+  .header-left {
+    padding: 15px;
+    border-right: 2px solid #F1F3F4;
+    height: 100%;
+  }
+
+  .header-right {
+    padding: 15px;
+    height: 100%;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
   }
 }

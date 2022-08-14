@@ -1,17 +1,34 @@
 import * as React from 'react';
-import {Col, Row} from 'antd';
+import {useState} from 'react';
+import {Col, Row, Button} from 'antd';
+import {SaveOutlined} from '@ant-design/icons';
+import type {SizeType} from 'antd/es/config-provider/SizeContext';
+
 import 'antd/dist/antd.css';
 import "./index.scss"
 
-const Footer = () => {
+const Header = () => {
+    const [size, setSize] = useState<SizeType>('large');
     return (
         <div className="wordpress-react-settings-footer">
-            <Row gutter={[0, 0]}>
-                <Col span={4}><h1>Hello Col1 </h1></Col>
-                <Col span={8}><h1>Hello Col 2</h1></Col>
+            <Row>
+                <Col flex={5}>
+                    <div className={"footer-left"}>
+                        <p>&copy; WordPress React</p>
+                    </div>
+                </Col>
+                <Col flex={20}>
+                    <div className={"footer-center"}></div>
+                </Col>
+                <Col flex={5}>
+                    <div className={"footer-right"}>
+                        <Button type="primary" icon={<SaveOutlined/>} size={size}>
+                            Save Changes
+                        </Button>
+                    </div>
+                </Col>
             </Row>
         </div>
     );
 };
-
-export default Footer;
+export default Header;

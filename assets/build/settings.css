@@ -27440,12 +27440,22 @@ div.ant-typography-edit-content.ant-typography-rtl {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/header/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
 .wordpress-react-settings-header {
-  padding: 15px;
-  border: 2px solid #f9f9f9;
+  border: 2px solid #F1F3F4;
 }
-.wordpress-react-settings-header .header-title {
-  width: 100%;
-  border-right: 2px solid #f9f9f9;
+.wordpress-react-settings-header .header-left {
+  padding: 15px;
+  border-right: 2px solid #F1F3F4;
+  height: 100%;
+}
+.wordpress-react-settings-header .header-right {
+  padding: 15px;
+  height: 100%;
+}
+.wordpress-react-settings-header h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/content/index.scss ***!
@@ -27458,7 +27468,21 @@ div.ant-typography-edit-content.ant-typography-rtl {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/footer/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
 .wordpress-react-settings-footer {
+  border: 2px solid #F1F3F4;
+}
+.wordpress-react-settings-footer .footer-left {
   padding: 15px;
+  height: 100%;
+}
+.wordpress-react-settings-footer .footer-right {
+  padding: 15px;
+  height: 100%;
+}
+.wordpress-react-settings-footer h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=settings.css.map*/
