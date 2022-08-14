@@ -27466,7 +27466,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .wordpress-react-settings-content .sidebar-left {
   border-left: 2px solid #F1F3F4;
   height: 100%;
-  padding: 15px;
 }
 .wordpress-react-settings-content .content-center {
   padding: 15px;
@@ -27476,6 +27475,15 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .wordpress-react-settings-content .content-right {
   padding: 15px;
   height: 100%;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/content/sidebar/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.wordpress-react-settings-sidebar {
+  padding: 0px;
+}
+.wordpress-react-settings-sidebar .ant-menu-inline {
+  border-right: 0;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/footer/index.scss ***!

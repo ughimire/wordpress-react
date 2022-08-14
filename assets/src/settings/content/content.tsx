@@ -5,6 +5,7 @@ import "./index.scss"
 import {Col, Row, Button} from 'antd';
 import {SaveOutlined} from '@ant-design/icons';
 import type {SizeType} from 'antd/es/config-provider/SizeContext';
+import Sidebar from "./sidebar/sidebar";
 
 const Content = () => {
     const [size, setSize] = useState<SizeType>('large');
@@ -15,7 +16,7 @@ const Content = () => {
             <Row wrap={false}>
                 <Col flex="300px">
                     <div className={"sidebar-left"}>
-                        <h2>Settings Page</h2>
+                        <Sidebar/>
                     </div>
                 </Col>
                 <Col flex="auto">
