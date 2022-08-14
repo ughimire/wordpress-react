@@ -43,7 +43,7 @@ function wordpress_react()
     static $instance;
 
     // first call to instance() initializes the plugin
-    if ($instance === null || !($instance instanceof WordPress_React))
+    if (!($instance instanceof WordPress_React))
         $instance = WordPress_React::instance();
 
     return $instance;

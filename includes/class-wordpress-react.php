@@ -91,6 +91,11 @@ final class WordPress_React
 
     }
 
+    public function init()
+    {
+        
+    }
+
     /**
      * Define WordPress_React Constants.
      */

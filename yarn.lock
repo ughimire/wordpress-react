@@ -5418,9 +5418,9 @@
     "webidl-conversions" "^5.0.0"
 
 "domhandler@^2.3.0":
-  "integrity" "sha512-JiK04h0Ht5u/80fdLMCEmV4zkNh2BcoMFBmZ/91WtYZ8qVXSKjiw7fXMgFPnHcSZgOo3XdinHvmnDUeMf5R4wA=="
-  "resolved" "https://registry.npmjs.org/domhandler/-/domhandler-2.4.2.tgz"
-  "version" "2.4.2"
+  "integrity" "sha512-q9bUwjfp7Eif8jWxxxPSykdRZAb6GkguBGSgvvCrhI9wB71W2K/Kvv4E61CF/mcCfnVJDeDWx/Vb/uAqbDj6UQ=="
+  "resolved" "https://registry.npmjs.org/domhandler/-/domhandler-2.3.0.tgz"
+  "version" "2.3.0"
   dependencies:
     "domelementtype" "1"
 
@@ -5446,9 +5446,9 @@
     "domelementtype" "1"
 
 "domutils@^1.5.1":
-  "integrity" "sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg=="
-  "resolved" "https://registry.npmjs.org/domutils/-/domutils-1.7.0.tgz"
-  "version" "1.7.0"
+  "integrity" "sha512-gSu5Oi/I+3wDENBsOWBiRK1eoGxcywYSqg3rR960/+EfY0CF4EX1VPkgHOZ3WiS/Jg2DtliF6BhWcHlfpYUcGw=="
+  "resolved" "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz"
+  "version" "1.5.1"
   dependencies:
     "dom-serializer" "0"
     "domelementtype" "1"
@@ -10370,7 +10370,14 @@
     "lru-cache" "2"
     "sigmund" "~1.0.0"
 
-"minimatch@^3.0.4", "minimatch@^3.1.2", "minimatch@2 || 3":
+"minimatch@^3.0.4", "minimatch@~3.0.2", "minimatch@~3.0.4", "minimatch@2 || 3":
+  "integrity" "sha512-6FsRAQsxQ61mw+qP1ZzbL9Bc78x2p5OqNgNpnoAFLTrX8n5Kxph0CsnhmKKNXTWjXqU5L0pGPR7hYk+XWZr60Q=="
+  "resolved" "https://registry.npmjs.org/minimatch/-/minimatch-3.0.8.tgz"
+  "version" "3.0.8"
+  dependencies:
+    "brace-expansion" "^1.1.7"
+
+"minimatch@^3.1.2":
   "integrity" "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw=="
   "resolved" "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
   "version" "3.1.2"
@@ -10384,20 +10391,6 @@
   dependencies:
     "lru-cache" "2"
     "sigmund" "~1.0.0"
-
-"minimatch@~3.0.2":
-  "integrity" "sha512-6FsRAQsxQ61mw+qP1ZzbL9Bc78x2p5OqNgNpnoAFLTrX8n5Kxph0CsnhmKKNXTWjXqU5L0pGPR7hYk+XWZr60Q=="
-  "resolved" "https://registry.npmjs.org/minimatch/-/minimatch-3.0.8.tgz"
-  "version" "3.0.8"
-  dependencies:
-    "brace-expansion" "^1.1.7"
-
-"minimatch@~3.0.4":
-  "integrity" "sha512-6FsRAQsxQ61mw+qP1ZzbL9Bc78x2p5OqNgNpnoAFLTrX8n5Kxph0CsnhmKKNXTWjXqU5L0pGPR7hYk+XWZr60Q=="
-  "resolved" "https://registry.npmjs.org/minimatch/-/minimatch-3.0.8.tgz"
-  "version" "3.0.8"
-  dependencies:
-    "brace-expansion" "^1.1.7"
 
 "minimatch@0.3":
   "integrity" "sha512-WFX1jI1AaxNTZVOHLBVazwTWKaQjoykSzCBNXB72vDTCzopQGtyP91tKdFK5cv1+qMwPyiTu1HqUriqplI8pcA=="
@@ -11872,9 +11865,9 @@
     "tslib" "^2.1.0"
 
 "portfinder@^1.0.17":
-  "integrity" "sha512-Z5+DarHWCKlufshB9Z1pN95oLtANoY5Wn9X3JGELGyQ6VhEcBfT2t+1fGUBq7MwUant6g/mqowH+4HifByPbiQ=="
-  "resolved" "https://registry.npmjs.org/portfinder/-/portfinder-1.0.29.tgz"
-  "version" "1.0.29"
+  "integrity" "sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg=="
+  "resolved" "https://registry.npmjs.org/portfinder/-/portfinder-1.0.32.tgz"
+  "version" "1.0.32"
   dependencies:
     "async" "^2.6.4"
     "debug" "^3.2.7"
@@ -13961,8 +13954,6 @@
   "version" "5.2.1"
 
 "safe-buffer@^5.2.1":
-  "integrity" "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
-  "resolved" "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
   "version" "5.2.1"
 
 "safe-buffer@~5.2.0":
@@ -16571,8 +16562,6 @@
   "version" "3.0.3"
 
 "yallist@^3.1.1":
-  "integrity" "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
-  "resolved" "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"
   "version" "3.1.1"
 
 "yallist@^4.0.0":
