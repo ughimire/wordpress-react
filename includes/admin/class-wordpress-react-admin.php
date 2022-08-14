@@ -7,6 +7,30 @@ class WordPress_React_Admin
         add_action('admin_menu', array($this, 'admin_menu'), 55);
 
         add_action('admin_enqueue_scripts', array($this, 'scripts'));
+        add_action('admin_enqueue_scripts', array($this, 'remove_wp_default_form_dependency'));
+
+        //wp_deregister_style('forms');
+    }
+
+    public function remove_wp_default_form_dependency($hook)
+    {
+        if ('toplevel_page_wordpress-react' != $hook) {
+            return;
+        }
+
+        $wp_styles = wp_styles();
+        $style = $wp_styles->query('wp-admin', 'registered');
+
+        if (!$style) {
+            return;
+        }
+
+        $new_dependencies = $style->deps;
+
+        array_splice($new_dependencies, array_search("forms", $new_dependencies), 1);
+
+        $style->deps = $new_dependencies;
+
 
     }
 

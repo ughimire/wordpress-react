@@ -13,7 +13,9 @@ type LayoutType = Parameters<typeof Form>[0]['layout'];
 const FormFields = () => {
 
     const [form] = Form.useForm();
-    const [formLayout, setFormLayout] = useState<LayoutType>('horizontal');
+    const [formLayout, setFormLayout] = useState<LayoutType>('vertical');
+    const [componentSize, setComponentSize] = useState<SizeType | 'default'>('default');
+
     const onFormLayoutChange = ({layout}: { layout: LayoutType }) => {
         setFormLayout(layout);
     };
@@ -41,14 +43,8 @@ const FormFields = () => {
                 form={form}
                 initialValues={{layout: formLayout}}
                 onValuesChange={onFormLayoutChange}
+                size={componentSize as SizeType}
             >
-                <Form.Item label="Form Layout" name="layout">
-                    <Radio.Group value={formLayout}>
-                        <Radio.Button value="horizontal">Horizontal</Radio.Button>
-                        <Radio.Button value="vertical">Vertical</Radio.Button>
-                        <Radio.Button value="inline">Inline</Radio.Button>
-                    </Radio.Group>
-                </Form.Item>
                 <Form.Item label="Field A">
                     <Input placeholder="input placeholder"/>
                 </Form.Item>
