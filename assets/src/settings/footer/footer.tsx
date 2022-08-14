@@ -11,16 +11,16 @@ const Header = () => {
     const [size, setSize] = useState<SizeType>('large');
     return (
         <div className="wordpress-react-settings-footer">
-            <Row>
-                <Col flex={5}>
+            <Row wrap={false}>
+                <Col flex="300px">
                     <div className={"footer-left"}>
                         <p>&copy; WordPress React</p>
                     </div>
                 </Col>
-                <Col flex={20}>
+                <Col flex="auto">
                     <div className={"footer-center"}></div>
                 </Col>
-                <Col flex={5}>
+                <Col flex="350px">
                     <div className={"footer-right"}>
                         <Button type="primary" icon={<SaveOutlined/>} size={size}>
                             Save Changes

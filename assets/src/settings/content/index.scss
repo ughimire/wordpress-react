@@ -1,10 +1,22 @@
 .wordpress-react-settings-content {
-   background: #f8f9fc;
+  background: #f8f9fc;
 
   .sidebar-left {
-    border-right: 2px solid #F1F3F4;
+     border-left: 2px solid #F1F3F4;
     height: 100%;
     padding: 15px;
 
   }
+
+  .content-center {
+    padding: 15px;
+    height:100%;
+    border-left: 2px solid #F1F3F4;
+  }
+
+  .content-right {
+    padding: 15px;
+    height: 100%;
+  }
+
 }

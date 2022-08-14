@@ -11,17 +11,21 @@ const Content = () => {
 
     return (
         <div className="wordpress-react-settings-content">
-            <Row>
-                <Col flex={5}>
+
+            <Row wrap={false}>
+                <Col flex="300px">
                     <div className={"sidebar-left"}>
                         <h2>Settings Page</h2>
                     </div>
                 </Col>
-                <Col flex={20}>
-                    <div className={"header-center"}></div>
+                <Col flex="auto">
+                    <div className={"content-center"}>
+
+
+                    </div>
                 </Col>
-                <Col flex={5}>
-                    <div className={"header-right"}>
+                <Col flex="350px">
+                    <div className={"sidebar-right"}>
 
                     </div>
                 </Col>

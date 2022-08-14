@@ -11,18 +11,18 @@ const Header = () => {
     const [size, setSize] = useState<SizeType>('large');
     return (
         <div className="wordpress-react-settings-header">
-            <Row>
-                <Col flex={5}>
+            <Row wrap={false}>
+                <Col flex="300px">
                     <div className={"header-left"}>
                         <h2>Settings Page</h2>
                     </div>
                 </Col>
-                <Col flex={20}>
+                <Col flex="auto">
                     <div className={"header-center"}></div>
                 </Col>
-                <Col flex={5}>
+                <Col flex="350px">
                     <div className={"header-right"}>
-                        <Button type="primary" icon={<SaveOutlined/>} size={size} >
+                        <Button type="primary" icon={<SaveOutlined/>} size={size}>
                             Save Changes
                         </Button>
                     </div>
