@@ -1,7 +1,9 @@
+/** @var WordPress_React_Obj */
 import * as React from 'react';
 import {useState} from 'react';
 import 'antd/dist/antd.css';
 import "./index.scss"
+import "../../../global/globals"
 import {Col, Row, Button} from 'antd';
 import {SaveOutlined} from '@ant-design/icons';
 import type {SizeType} from 'antd/es/config-provider/SizeContext';
@@ -31,6 +33,30 @@ function getItem(
     } as MenuItem;
 }
 
+function get_menu_items() {
+    let settings = WordPress_React_Obj.settings;
+    let items = new Array();
+    Object.keys(settings).forEach(function (key) {
+        let nav_item = get_menu_item(settings[key]);
+        items.push(nav_item)
+    });
+    return items;
+    return settings;
+}
+
+function get_menu_item(item: any) {
+    let parsed_item = {
+        key: item.id,
+        icon: <MailOutlined/>,
+       // children: new Array(),
+        label: item.title
+
+    }
+    return parsed_item;
+
+
+}
+
 const items: MenuItem[] = [
     getItem('Navigation One', '1', <MailOutlined/>),
     getItem('Navigation Two', '2', <CalendarOutlined/>),
@@ -53,6 +79,9 @@ const items: MenuItem[] = [
         <LinkOutlined/>,
     ),
 ];
+const items1: MenuItem[] = get_menu_items();
+console.log(items);
+console.log(get_menu_items());
 const Sidebar = () => {
     const [mode, setMode] = useState<'vertical' | 'inline'>('inline');
     const [theme, setTheme] = useState<MenuTheme>('light');
@@ -73,7 +102,7 @@ const Sidebar = () => {
                 defaultOpenKeys={['sub1']}
                 mode={mode}
                 theme={theme}
-                items={items}
+                items={items1}
             />
 
         </div>

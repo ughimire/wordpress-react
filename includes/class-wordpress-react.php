@@ -93,7 +93,7 @@ final class WordPress_React
 
     public function init()
     {
-        
+
     }
 
     /**
@@ -146,6 +146,7 @@ final class WordPress_React
      */
     public function includes()
     {
+        include_once plugin_dir_path(WORDPRESS_REACT_FILE) . 'includes/helpers/functions.php';
 
         if (is_admin()) {
             include_once plugin_dir_path(WORDPRESS_REACT_FILE) . 'includes/admin/class-wordpress-react-admin.php';

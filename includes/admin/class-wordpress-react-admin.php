@@ -86,7 +86,7 @@ class WordPress_React_Admin
 
             $dependency = file_exists(WORDPRESS_REACT_ABSPATH . "assets/build/js/{$point}.asset.php") ? include_once(WORDPRESS_REACT_ABSPATH . "assets/build/js/{$point}.asset.php") : array();
 
-            $dependency['dependencies'] = isset($dependency['dependencies']) ? $dependency['dependencies'] : array();
+            $dependency['dependencies'] = $dependency['dependencies'] ?? array();
 
             $dependency['version'] = isset($dependency['version']) ? sanitize_text_field($dependency['version']) : WORDPRESS_REACT_VERSION;
 
@@ -100,6 +100,9 @@ class WordPress_React_Admin
             }
 
         }
+        $localize_script = wordpress_react_localize_settings();
+
+        wp_localize_script('wordpress-react-settings', 'WordPress_React_Obj', array('settings'=>$localize_script));
     }
 }
 
