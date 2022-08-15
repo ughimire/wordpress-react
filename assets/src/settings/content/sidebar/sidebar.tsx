@@ -35,7 +35,6 @@ function getItem(
 }
 
 function get_menu_items(settings: any) {
-    //alert(JSON.stringify(settings));
     let items = new Array();
     Object.keys(settings).forEach(function (key) {
         let nav_item = get_menu_item(settings[key]);
