@@ -25,7 +25,9 @@ const Content = () => {
         let selectedSec = ObjectDeep(settings, {key: "id", value: id});
         if (typeof selectedSec.sections !== "undefined") {
             setSelectedSections(selectedSec.sections);
+            console.log(selectedSec);
         }
+
     }
 
     return (
