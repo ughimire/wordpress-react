@@ -16,7 +16,14 @@ function wordpress_react_localize_settings()
                             'title' => __('Enable Guest Checkout', 'yatra'),
                             'desc' => __('This option allows you to checkout without login. User will not created if you tick this option..', 'yatra'),
                             'id' => 'wordpress_react_input_field_1',
-                            'type' => 'text',
+                            'type' => 'checkbox',
+                            'options' => array(
+                                'a' => __('AEIOP', 'yatra'),
+                                'b' => __('AEIOP1', 'yatra'),
+                                'c' => __('AEIOP2', 'yatra'),
+                                'd' => __('AEIOP3', 'yatra'),
+                                'e' => __('AEIOP4', 'yatra'),
+                            ),
                             'default' => 'yes',
                         ),
                         array(
