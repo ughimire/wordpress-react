@@ -7,6 +7,7 @@ import {SaveOutlined} from '@ant-design/icons';
 import type {SizeType} from 'antd/es/config-provider/SizeContext';
 
 import {Button, Form, Input, Radio} from 'antd';
+import FormItem from "./form_item";
 
 type LayoutType = Parameters<typeof Form>[0]['layout'];
 type formProps = {
@@ -17,6 +18,7 @@ const FormFields = (props: formProps) => {
     const [form] = Form.useForm();
     const [formLayout, setFormLayout] = useState<LayoutType>('vertical');
     const [componentSize, setComponentSize] = useState<SizeType | 'large'>('large');
+    const [settings, setSettings] = useState(props.section.settings);
 
     const onFormLayoutChange = ({layout}: { layout: LayoutType }) => {
         setFormLayout(layout);
@@ -37,7 +39,6 @@ const FormFields = (props: formProps) => {
             : null;
 
 
-    console.log(props.section);
     return (
         <div className="wordpress-react-settings-content-form">
             <Card title={props.section.title} style={{width: "100%"}}>
@@ -49,13 +50,10 @@ const FormFields = (props: formProps) => {
                     onValuesChange={onFormLayoutChange}
                     size={componentSize as SizeType}
                 >
-                    <Form.Item label="Field A">
-                        <Input placeholder="input placeholder"/>
-                    </Form.Item>
-                    <Form.Item label="Field B label, you can modify this label to chang ethe label of field B.">
-                        <Input placeholder="input placeholder"/>
-                    </Form.Item>
-
+                    {Object.keys(settings).map((setting_id: any, index: number) => (
+                        <FormItem item={settings[setting_id]}/>
+                    ))}
+                   
                 </Form>
             </Card>
 

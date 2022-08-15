@@ -2,13 +2,12 @@ import * as React from 'react';
 import {Form, Input} from 'antd';
 
 type textProps = {
-    placeholder?: string,
-    label?: string
+    options: any,
 };
 const Text = (props: textProps) => {
     return (
-        <Form.Item label={props.label}>
-            <Input placeholder={props.placeholder}/>
+        <Form.Item label={props.options.title}>
+            <Input placeholder={props.options.placeholder}/>
         </Form.Item>
     );
 };

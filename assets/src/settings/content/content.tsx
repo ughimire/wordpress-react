@@ -21,8 +21,8 @@ const Content = () => {
         /*   idArray.forEach(function (item: string, index: number) {
                console.log(item, index);
            });*/
-        let selectedSec = ObjectDeep(settings, {key: "id", value: id});
 
+        let selectedSec = ObjectDeep(settings, {key: "id", value: id});
         if (typeof selectedSec.sections !== "undefined") {
             setSelectedSections(selectedSec.sections);
         }
