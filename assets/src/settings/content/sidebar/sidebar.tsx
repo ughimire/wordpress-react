@@ -34,26 +34,24 @@ function getItem(
     } as MenuItem;
 }
 
-function get_menu_items() {
-    let settings = WordPress_React_Obj.settings;
+function get_menu_items(settings: any) {
+    //alert(JSON.stringify(settings));
     let items = new Array();
     Object.keys(settings).forEach(function (key) {
         let nav_item = get_menu_item(settings[key]);
         items.push(nav_item)
     });
     return items;
-    return settings;
 }
 
 function get_menu_item(item: any) {
-    let parsed_item = {
+    return {
         key: item.id,
         icon: <Icon icon={item.icon}/>,
-        children: new Array(),
+        children: typeof item.children != "undefined" ? get_menu_items(item.children) : undefined,
         label: item.title
 
     }
-    return parsed_item;
 
 
 }
@@ -80,9 +78,9 @@ const items: MenuItem[] = [
         <LinkOutlined/>,
     ),
 ];
-const items1: MenuItem[] = get_menu_items();
+const items1: MenuItem[] = get_menu_items(WordPress_React_Obj.settings);
 console.log(items);
-console.log(get_menu_items());
+console.log(get_menu_items(WordPress_React_Obj.settings));
 const Sidebar = () => {
     const [mode, setMode] = useState<'vertical' | 'inline'>('inline');
     const [theme, setTheme] = useState<MenuTheme>('light');
