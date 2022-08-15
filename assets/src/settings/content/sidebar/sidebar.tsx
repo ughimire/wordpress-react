@@ -80,7 +80,11 @@ const items: MenuItem[] = [
 const items1: MenuItem[] = get_menu_items(WordPress_React_Obj.settings);
 console.log(items);
 console.log(get_menu_items(WordPress_React_Obj.settings));
-const Sidebar = () => {
+
+type sidebarProps = {
+    menuItemClicked: (event: any) => void
+}
+const Sidebar = (props: sidebarProps) => {
     const [mode, setMode] = useState<'vertical' | 'inline'>('inline');
     const [theme, setTheme] = useState<MenuTheme>('light');
     const changeMode = (value: boolean) => {
@@ -101,6 +105,9 @@ const Sidebar = () => {
                 mode={mode}
                 theme={theme}
                 items={items1}
+                onClick={(event) => {
+                    props.menuItemClicked(event)
+                }}
             />
 
         </div>
