@@ -16,6 +16,7 @@ import {
 } from '@ant-design/icons';
 import {Divider, Menu, Switch} from 'antd';
 import type {MenuProps, MenuTheme} from 'antd/es/menu';
+import Icon from "../../../global/icon";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -47,8 +48,8 @@ function get_menu_items() {
 function get_menu_item(item: any) {
     let parsed_item = {
         key: item.id,
-        icon: <MailOutlined/>,
-       // children: new Array(),
+        icon: <Icon icon={item.icon}/>,
+        children: new Array(),
         label: item.title
 
     }

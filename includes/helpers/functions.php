@@ -95,6 +95,7 @@ function wordpress_react_localize_settings()
             'type' => 'title',
             'desc' => '',
             'id' => 'wordpress_react_minor_settings',
+            'icon' => 'dashicons dashicons-admin-plugins',
             'sections' => array(
                 array(
                     'title' => __('General Settings', 'yatra'),

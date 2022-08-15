@@ -27485,6 +27485,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .wordpress-react-settings-sidebar .ant-menu-inline {
   border-right: 0;
 }
+.wordpress-react-settings-sidebar .icon {
+  margin-right: 5px;
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./assets/src/settings/elements/index.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************/
